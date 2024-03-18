@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha Aleatória</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/imgs/pass.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senha Aleatória</h1>
+        <div class="options">
+            <label for="tipo-senha">Tipo de Senha:</label>
+            <select id="tipo-senha">
+                <option value="numeros">Somente Números</option>
+                <option value="letras-numeros">Letras e Números</option>
+                <option value="letras-numeros-caracteres">Letras, Números e Caracteres Especiais</option>
+            </select>
+            <label for="tamanho-senha">Tamanho da Senha:</label>
+            <select id="tamanho-senha">
+                <option value="5">5 caracteres</option>
+                <option value="6">6 caracteres</option>
+                <option value="7">7 caracteres</option>
+                <option value="8">8 caracteres</option>
+                <option value="9">9 caracteres</option>
+                <option value="10">10 caracteres</option>
+                <option value="11">11 caracteres</option>
+                <option value="12">12 caracteres</option>
+                <option value="13">13 caracteres</option>
+                <option value="14">14 caracteres</option>
+                <option value="15">15 caracteres</option>
+                <option value="16">16 caracteres</option>
+                <option value="17">17 caracteres</option>
+                <option value="18">18 caracteres</option>
+                <option value="19">19 caracteres</option>
+                <option value="20">20 caracteres</option>
+                <option value="21">21 caracteres</option>
+                <option value="22">22 caracteres</option>
+                <option value="23">23 caracteres</option>
+                <option value="24">24 caracteres</option>
+            </select>
+        </div>
+        <label for="nome-site">Nome do Site/Aplicativo:</label>
+        <input type="text" id="nome-site" placeholder="Digite o nome do site/aplicativo">
+        <input type="text" id="senha" readonly placeholder="Sua senha será gerada aqui">
+        <div class="buttons">
+            <button onclick="gerarSenha()" id="btn-gerar">Gerar Senha</button>
+            <button onclick="copiarSenha()" id="btn-copy">Copiar Senha</button>
+        </div>
+        <div id="historico-senhas">
+            <h2>Histórico de Senhas</h2>
+            <ul id="lista-senhas"></ul>
+            <button onclick="limparHistorico()" id="limpar-hist">Limpar Histórico</button>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Desenvolvido por <a id="link" href="https://github.com/tiago-bot" target="_blank">Tiago Triani</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

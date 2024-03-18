@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(121, 230, 48, 0.5), rgba(211, 33, 33, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+#senha {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#lista-senhas li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+#footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#lista-senhas li span {
+    margin-right: 10px;
+}
+
+#lista-senhas li button {
+    margin-left: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#lista-senhas li button:focus {
+    outline: none;
+}
+
+.bi-eye,
+.bi-eye-slash,
+.bi-trash {
+    font-size: 1.5rem; 
+}
+
+#btn-gerar {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf70;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btn-gerar:hover {
+    background-color: #45a367;
+}
+
+#btn-copy {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf70;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btn-copy:hover {
+    background-color: #45a367;
+}
+
+#tamanho-senha {
+    width: 13%;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+#nome-site{
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#tipo-senha {
+    width: 25%;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#limpar-hist {
+    background-color: #ff0000 ; 
+    color: #ffffff; 
+    border: 2px solid #000000; 
+    font-size: 16px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-top: 15px; 
+    width: 30%; 
+    position: relative;
+    left: 35%;
+  }
+
+@media (max-width: 768px) {
+    .container {
+        width: 60%;
+    }
+}
